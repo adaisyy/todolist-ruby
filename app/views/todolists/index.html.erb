@@ -1,0 +1,19 @@
+<h1 class="text-danger">タスク一覧</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>タスク名</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todolists.each do |task| %>
+    <tr>
+      <td><%= todolist.title %></td>
+      <td><%= todolists.description %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
