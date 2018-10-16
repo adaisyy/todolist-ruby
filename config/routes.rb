@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  # TODOリストルーティング
-  resources :todolists
+  # / ルートアクセスでTODOリストが表示されるように変更
+  root :to => 'todolists#index'
 end
