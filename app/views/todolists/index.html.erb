@@ -1,5 +1,4 @@
-<h1 class="text-danger">Todoリスト一覧</h1>
-<span class="text-warning">リスト表示</span>
+<h1 class="text-danger text-center">Todoリスト一覧</h1>
 
 <table>
   <thead>
@@ -10,11 +9,11 @@
   </thead>
 
   <tbody>
-    <%# <% @todolists.each do |task| %><%# %>
-    <%# <tr> %>
-      <%# <td><%= todolist.title %><%# </td> %>
-      <%# <td><%= todolists.description %><%# </td> %>
-    <%# </tr> %>
-    <%# <% end %><%# %>
+    <% @todolists.each do |task| %>
+    <tr>
+      <td><%= todolist.title %></td>
+      <td><%= todolists.description %></td>
+    </tr>
+    <% end %>
   </tbody>
 </table>
