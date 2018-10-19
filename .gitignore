@@ -29,3 +29,9 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# migrate file
+db/migrate/*
+
+# conf file
+config/database.yml
