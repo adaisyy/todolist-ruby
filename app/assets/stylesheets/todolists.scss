@@ -1,3 +1,111 @@
 // Place all the styles related to the todolists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// 背景デザイン
+body{
+  background-color: rgba(244, 181, 250, 0.1);
+  background-image: -webkit-linear-gradient(45deg,  rgba(244, 160, 255, 0.1) 25%, rgba(244, 160, 255, 0.1) 25%, transparent 25%, transparent 100%),
+                    -webkit-linear-gradient(-135deg, rgba(244, 160, 255, 0.1) 25%, rgba(244, 160, 255, 0.1) 25%, transparent 25%, transparent 100%),
+                    -webkit-linear-gradient(-135deg, rgba(244, 181, 250, 0.1) 25%, rgba(244, 181, 250, 0.1) 25%, transparent 25%, transparent 100%),
+                    -webkit-linear-gradient(45deg, rgba(244, 181, 250, 0.1) 25%, rgba(244, 181, 250, 0.1) 25%, transparent 25%, transparent 100%),
+                    -webkit-linear-gradient(45deg, rgba(244, 160, 255, 0.1) 0%, rgba(244, 160, 255, 0.1) 6%, transparent 6%, transparent 11%,
+                                                  rgba(244, 160, 255, 0.1) 11%, rgba(244, 160, 255, 0.1) 17%, transparent 17%, transparent 22%,
+                                                  rgba(244, 160, 255, 0.1) 22%, rgba(244, 160, 255, 0.1) 28%, transparent 28%, transparent 33%,
+                                                  rgba(244, 160, 255, 0.1) 33%, rgba(244, 160, 255, 0.1) 39%, transparent 39%, transparent 44%,
+                                                  rgba(244, 160, 255, 0.1) 44%, rgba(244, 160, 255, 0.1) 50%, transparent 50%, transparent 55%,
+                                                  rgba(244, 160, 255, 0.1) 55%, rgba(244, 160, 255, 0.1) 61%, transparent 61%, transparent 66%,
+                                                  rgba(244, 160, 255, 0.1) 66%, rgba(244, 160, 255, 0.1) 72%, transparent 72%, transparent 77%,
+                                                  rgba(244, 160, 255, 0.1) 77%, rgba(244, 160, 255, 0.1) 83%, transparent 83%, transparent 88%,
+                                                  rgba(244, 160, 255, 0.1) 88%, rgba(244, 160, 255, 0.1) 94%, transparent 94%, transparent 100%);
+  background-image: linear-gradient(45deg,  rgba(244, 160, 255, 0.1) 25%, rgba(244, 160, 255, 0.1) 25%, transparent 25%, transparent 100%),
+                    linear-gradient(-135deg, rgba(244, 160, 255, 0.1) 25%, rgba(244, 160, 255, 0.1) 25%, transparent 25%, transparent 100%),
+                    linear-gradient(-135deg, rgba(244, 181, 250, 0.1) 25%, rgba(244, 181, 250, 0.1) 25%, transparent 25%, transparent 100%),
+                    linear-gradient(45deg, rgba(244, 181, 250, 0.1) 25%, rgba(244, 181, 250, 0.1) 25%, transparent 25%, transparent 100%),
+                    linear-gradient(45deg, rgba(244, 160, 255, 0.1) 0%, rgba(244, 160, 255, 0.1) 6%, transparent 6%, transparent 11%,
+                                          rgba(244, 160, 255, 0.1) 11%, rgba(244, 160, 255, 0.1) 17%, transparent 17%, transparent 22%,
+                                          rgba(244, 160, 255, 0.1) 22%, rgba(244, 160, 255, 0.1) 28%, transparent 28%, transparent 33%,
+                                          rgba(244, 160, 255, 0.1) 33%, rgba(244, 160, 255, 0.1) 39%, transparent 39%, transparent 44%,
+                                          rgba(244, 160, 255, 0.1) 44%, rgba(244, 160, 255, 0.1) 50%, transparent 50%, transparent 55%,
+                                          rgba(244, 160, 255, 0.1) 55%, rgba(244, 160, 255, 0.1) 61%, transparent 61%, transparent 66%,
+                                          rgba(244, 160, 255, 0.1) 66%, rgba(244, 160, 255, 0.1) 72%, transparent 72%, transparent 77%,
+                                          rgba(244, 160, 255, 0.1) 77%, rgba(244, 160, 255, 0.1) 83%, transparent 83%, transparent 88%,
+                                          rgba(244, 160, 255, 0.1) 88%, rgba(244, 160, 255, 0.1) 94%, transparent 94%, transparent 100%);
+  -webkit-background-size: 30px 30px;
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px, 0 0, 15px 15px, 0 0;
+}
+
+// 枠を丸く
+.radius, .flower-box, .dashed-button {
+  border-radius: 5px;
+}
+
+// 右側にスペース入れる
+.glyphicon{
+  margin-right: 0.5em;
+}
+
+// カレンダーアイコンはスペース無し
+.glyphicon-calendar {
+  margin-right: 0;
+}
+
+// 枠デザイン
+.flower-box{
+  border: 2px dotted #d7a8ea;
+  margin: 25px 20px;
+  padding: 15px 20px;
+  position: relative;
+}
+ .flower-box:before{
+  content: '＊';
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  top: -38px;
+  left: -25px;
+  transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  text-shadow:  0 0 8px #d7a8ea, 0 0 6px #d7a8ea, 0 0 4px #d7a8ea, 0 0 2px #d7a8ea, 0 0 0.5px #d7a8ea;
+}
+ .flower-box:after{
+  content: '*';
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  bottom: -45px;
+  right: -15px;
+  transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  text-shadow:  0 0 8px #d7a8ea, 0 0 6px #d7a8ea, 0 0 4px #d7a8ea, 0 0 2px #d7a8ea, 0 0 0.5px #d7a8ea;
+}
+
+// ボタンデザイン
+.dashed-button {
+  position: relative;
+  display: inline-block;
+  padding: .5em 1em;
+  background: -webkit-linear-gradient(#d7a8ea , #d787e0);
+  background: linear-gradient(#d7a8ea , #d787e0);
+  border: 1px solid #d7a8ea;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+.dashed-button::after {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  bottom: 3px;
+  left: 3px;
+  content: '';
+  border: 2px dashed #fff;
+  border-radius: .4em 2em .5em 3em/3em .5em 2em .5em;
+}
