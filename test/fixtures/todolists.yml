@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  description: MyText
+  date: 2018-10-19
+  task: MyText
+  fin_flag: 1
 
 two:
-  title: MyString
-  description: MyText
+  date: 2018-10-19
+  task: MyText
+  fin_flag: 1
