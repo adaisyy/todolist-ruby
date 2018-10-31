@@ -33,6 +33,8 @@
 # migrate file
 # db/migrate/*
 db/migrate/20181019074153_create_todolists.rb
+db/migrate/20181019075100_change_colomns.rb
+db/migrate/20181023025611_change_column_to_todolists.rb
 
 # conf file
 config/database.yml
