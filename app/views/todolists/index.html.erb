@@ -37,7 +37,7 @@
         <% @todolists.each do |todo| %>
           <div class="bs-component col-xs-8 col-xs-offset-2">
             <div class="card text-white bg-success mb-3">
-              <div class="card-header"><%= todo.deadline %></div>
+              <div class="card-header"><%= todo.deadline.strftime("%Y-%m-%d %H:%M") %></div>
               <div class="card-body">
                 <p class="card-text"><%= todo.task %></p>
               </div>
