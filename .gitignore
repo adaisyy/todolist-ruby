@@ -32,6 +32,7 @@
 
 # migrate file
 # db/migrate/*
+db/migrate/20181019074153_create_todolists.rb
 
 # conf file
 config/database.yml
