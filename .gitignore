@@ -38,3 +38,6 @@ db/migrate/20181023025611_change_column_to_todolists.rb
 
 # conf file
 config/database.yml
+
+/vendor/bundle/
+!/vendor/cache/*.gem
